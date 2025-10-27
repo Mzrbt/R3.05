@@ -41,6 +41,6 @@ int main()
    /* on débloque tous les signaux */
    sigemptyset(&ensemble);
    sigprocmask(SIG_SETMASK, &ensemble, NULL);
- read(0, &i, sizeof(int)); /* on continue par une saisie */
+   read(0, &i, sizeof(int)); /* on continue par une saisie */
    return 0;
 }
